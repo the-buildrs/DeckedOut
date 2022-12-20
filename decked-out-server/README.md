@@ -16,7 +16,16 @@ source ./venv/bin/activate
 pip3 install -r requirements.txt
 ```
 
-### (3) Run the app
+### (3) Create a .env file
+
+1. add the following code in a .env file, and fill in the API keys
+
+```
+OPENAI_API_KEY=KEY_STRING
+GOOGLE_CREDS=KEY_JSON
+```
+
+### (4) Run the app
 
 1. run the following: `python3 app.py`
 
