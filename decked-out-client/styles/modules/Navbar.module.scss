@@ -1,0 +1,34 @@
+@use '../global/variables' as *;
+
+.navContainer {
+	width: 100vw;
+	height: $nav-height;
+
+	background-color: $bg-primary;
+	color: $text-secondary;
+
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+
+	padding: 0 2rem;
+}
+
+.navContainer > * {
+	text-decoration: none;
+	font-size: 1.5rem;
+
+	color: $text-primary;
+}
+.navContainer > *:nth-child(3) {
+	margin-left: auto;
+}
+
+.activeLink {
+	font-weight: bold;
+}
+
+.navContainer > img {
+	width: 2rem;
+	height: 2rem;
+}

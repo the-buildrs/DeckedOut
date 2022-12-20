@@ -1,0 +1,131 @@
+@use '../global/variables.scss' as *;
+
+$width: 60%;
+
+// PROMPT
+.inputContainer {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.prompt {
+	width: $width;
+	display: flex;
+	border-bottom: 1px solid black;
+}
+
+.prompt > input {
+	width: 100%;
+	overflow: scroll;
+	font-size: 0.75rem;
+
+	border: 0 solid black;
+}
+.prompt > input:focus {
+	outline: none;
+}
+
+.prompt > span {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.inputType {
+	width: $width;
+	display: flex;
+	flex-direction: column;
+
+	padding: 0.25rem;
+}
+.inputType > span:first-child() {
+	font-size: 1rem;
+}
+.inputType > span:nth-child(2) {
+	font-size: 0.75rem;
+	color: $text-secondary;
+}
+
+.submitButton {
+	margin: 0.25rem;
+	border: solid black 1px;
+	padding: 0.25rem 0.5rem;
+	background-color: $bg-primary;
+
+	color: $text-primary;
+}
+.submitButton:hover {
+	background-color: $bg-tertiary;
+}
+.submitButton:active {
+	background-color: $bg-tertiary;
+}
+
+// DOWNLOAD SECTION
+.donwloadSection {
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	gap: 1.5rem;
+}
+
+.donwloadSection > img {
+	height: 6rem;
+}
+
+.downloadInfo {
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+}
+.downloadInfo > div:first-child {
+	width: 40%;
+	font-size: 0.75rem;
+}
+
+.divider {
+	width: 40%;
+	border: 1px solid black;
+}
+
+.downloadButtons {
+	display: flex;
+	gap: 1rem;
+	width: 40%;
+}
+.downloadButtons > button {
+	background-color: $bg-primary;
+	padding: 0.5rem 1rem;
+
+	flex: 1;
+	border: solid black 1px;
+	cursor: pointer;
+}
+.downloadButtons > button:first-child {
+	background-color: $bg-secondary;
+	color: $text-tertiary;
+}
+
+.errorContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	width: 100%;
+}
+.errorContainer > * {
+	font-size: 0.75rem;
+	text-align: center;
+}
