@@ -32,9 +32,8 @@ def create_powerpoint():
     prompt = request.json['prompt']
 
     # Generate bullet points with prompt
-    bullet_prompt = (f"Return a python list of 6 JSON objects summarizing the following with"
-                     " the keys being a main idea with key name 'Main Idea' and the values being an array of details "
-                     "of said main idea with key name being 'Details': {prompt}")
+    bullet_prompt = (
+        f"Return a python list of 6 JSON objects summarizing the following with the keys being a main idea with key name 'Main Idea' and the values being an array of details of said main idea with key name being 'Details': {prompt}")
     raw_output = gen.generate_completion(bullet_prompt, 500, 0.1)
     starting_index = raw_output.find("[")
 

@@ -1,9 +1,28 @@
+# Demo
+
+## Video Link
+
+Please see [here](https://www.loom.com/share/6fbc69b7778c4c8c898862b1655d5992) to view the demo. See below for timestamps
+
+## Timestamps
+
+- 00:30 - Sending prompt to the backend
+- 01:15 - Pptx file received from the backend
+- 01:20 - Downloading .pptx file to the desktop
+- 01:30 - Walkthrough of the AI generated presentation
+
+\*note, this project is currently not hosted online given API costs
+
 # Stack Information
 
--   Frontend
-    -   Next.js (Typescript)
--   Backend
-    -   Flask
+### Frontend
+- Next.js
+    - Typescript
+    - SCSS
+
+### Backend
+- Flask
+    - Python
 
 # Installation Instruction
 
